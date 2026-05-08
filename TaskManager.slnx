@@ -1,3 +1,6 @@
 <Solution>
+  <Folder Name="/Algorithms/" />
+  <Folder Name="/Forms/" />
+  <Folder Name="/Models/" />
   <Project Path="TaskManager.csproj" />
 </Solution>
