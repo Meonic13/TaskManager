@@ -100,7 +100,8 @@ Dequeue() → Low
 Visual Studio 2026 (рекомендуется) или VS Code
 Windows 10/11 (для Windows Forms)
 ```
-Способ 1: Через Visual Studio (рекомендуется)
+Способ: Через Visual Studio (рекомендуется)
+```csharp
 Шаг 1: Клонируйте репозиторий
 git clone https://github.com/Meonic13/TaskManager.git
 cd TaskManager
@@ -112,3 +113,4 @@ cd TaskManager
 Visual Studio автоматически загрузит все NuGet пакеты при открытии решения.
 Шаг 4: Запустите приложение
 Нажмите F5 или зелёную кнопку ▶️ с надписью "TaskManager"
+```
