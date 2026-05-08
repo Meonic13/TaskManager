@@ -74,7 +74,7 @@ Dequeue() → Critical
 Dequeue() → High
 Dequeue() → Medium
 Dequeue() → Low
-
+```
 2. Алгоритм планирования задач
 Принцип работы:
 Непреemptive планирование (без прерывания) — задача выполняется до конца
@@ -95,12 +95,14 @@ Dequeue() → Low
 
 🚀 Развертывание и запуск
 Требования
+```csharp
 .NET 10.0 SDK или выше (скачать)
 Visual Studio 2026 (рекомендуется) или VS Code
 Windows 10/11 (для Windows Forms)
+```
 Способ 1: Через Visual Studio (рекомендуется)
 Шаг 1: Клонируйте репозиторий
-git clone https://github.com/YOUR_USERNAME/TaskManager.git
+git clone https://github.com/Meonic13/TaskManager.git
 cd TaskManager
 Шаг 2: Откройте решение
 Запустите Visual Studio 2022
@@ -109,4 +111,4 @@ cd TaskManager
 Шаг 3: Восстановите зависимости
 Visual Studio автоматически загрузит все NuGet пакеты при открытии решения.
 Шаг 4: Запустите приложение
-Вариант A: Нажмите F5 или зелёную кнопку ▶️ с надписью "TaskManager"
+Нажмите F5 или зелёную кнопку ▶️ с надписью "TaskManager"
