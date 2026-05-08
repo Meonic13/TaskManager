@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/badge/License-Educational-lightgrey.svg)]()
 
 **Курсовая работа** по дисциплине «Алгоритмизация и программирование»  
-**Направление:** Искусственный интеллект, 1 курс  
+**Направление:**  Разработка систем искусственного интеллекта, 1 курс  
 **Вариант:** 16  
 **Студент:** Михайлов Н.М.
 
@@ -29,26 +29,23 @@
 
 ## 🏗️ Архитектура проекта
 TaskManager/
-├── Models/
-│ ├── Priority.cs # Enum приоритетов (Low=1, Medium=2, High=3, Critical=4)
-│ └── TaskItem.cs # Модель задачи с IComparable для сортировки
+├── Models/                          # Слой моделей данных
+│   ├── Priority.cs                  # Enum уровней приоритета
+│   └── TaskItem.cs                  # Модель задачи
 │
-├── Algorithms/
-│ ├── MaxHeapPriorityQueue.cs # Очередь с приоритетом (Max Heap)
-│ │ ├── Enqueue() - O(log n)
-│ │ ├── Dequeue() - O(log n)
-│ │ ├── Peek() - O(1)
-│ │ └── SiftUp/SiftDown - внутренние методы
-│ │
-│ └── TaskScheduler.cs # Алгоритм планирования задач
-│ └── ScheduleTasks() - O(n log n)
+├── Algorithms/                      # Слой бизнес-логики и алгоритмов
+│   ├── MaxHeapPriorityQueue.cs      # Очередь с приоритетом (Max Heap)
+│   └── TaskScheduler.cs             # Алгоритм планирования
 │
-├── Form1.cs # Windows Forms интерфейс
-├── Form1.Designer.cs # Дизайнер формы
-└── Program.cs # Точка входа
-TaskManager.Tests/
-├── HeapTests.cs # Тесты для MaxHeapPriorityQueue (12 тестов)
-└── SchedulerTests.cs # Тесты для TaskScheduler (12 тестов)
+├── UI/                              # Слой представления
+│   └── Form1.cs                     # Главная форма Windows Forms
+│
+├── Program.cs                       # Точка входа в приложение
+└── TaskManager.csproj               # Файл проекта
+
+TaskManager.Tests/                   # Проект модульных тестов
+├── HeapTests.cs                     # Тесты MaxHeapPriorityQueue
+└── SchedulerTests.cs                # Тесты TaskScheduler
 
 ---
 
