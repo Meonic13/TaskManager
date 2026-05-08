@@ -28,6 +28,7 @@
 ---
 
 ## 🏗️ Архитектура проекта
+```
 TaskManager/
 ├── Models/                          # Слой моделей данных
 │   ├── Priority.cs                  # Enum уровней приоритета
@@ -46,7 +47,7 @@ TaskManager/
 TaskManager.Tests/                   # Проект модульных тестов
 ├── HeapTests.cs                     # Тесты MaxHeapPriorityQueue
 └── SchedulerTests.cs                # Тесты TaskScheduler
-
+```
 ---
 
 ## 🔧 Реализованные алгоритмы
