@@ -1,6 +1,8 @@
 <Solution>
   <Folder Name="/Algorithms/" />
   <Folder Name="/Forms/" />
-  <Folder Name="/Models/" />
+  <Folder Name="/Models/">
+    <File Path="Priority.cs" />
+  </Folder>
   <Project Path="TaskManager.csproj" />
 </Solution>
