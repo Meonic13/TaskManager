@@ -3,6 +3,7 @@
   <Folder Name="/Forms/" />
   <Folder Name="/Models/">
     <File Path="Priority.cs" />
+    <File Path="TaskItem.cs" />
   </Folder>
   <Project Path="TaskManager.csproj" />
 </Solution>
