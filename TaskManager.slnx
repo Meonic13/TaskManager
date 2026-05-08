@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/Algorithms/">
     <File Path="MaxHeapPriorityQueue.cs" />
+    <File Path="TaskScheduler.cs" />
   </Folder>
   <Folder Name="/Forms/" />
   <Folder Name="/Models/">
