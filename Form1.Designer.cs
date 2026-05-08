@@ -17,169 +17,182 @@
 
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.txtTitle = new System.Windows.Forms.TextBox();
-            this.lblPriority = new System.Windows.Forms.Label();
-            this.cmbPriority = new System.Windows.Forms.ComboBox();
-            this.lblMinutes = new System.Windows.Forms.Label();
-            this.nudMinutes = new System.Windows.Forms.NumericUpDown();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.dataGridViewTasks = new System.Windows.Forms.DataGridView();
-            this.btnSchedule = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.btnBenchmark = new System.Windows.Forms.Button();
-            this.listBoxSchedule = new System.Windows.Forms.ListBox();
-            this.lblSchedule = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.nudMinutes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTasks)).BeginInit();
-            this.SuspendLayout();
+            lblTitle = new Label();
+            txtTitle = new TextBox();
+            lblPriority = new Label();
+            cmbPriority = new ComboBox();
+            lblMinutes = new Label();
+            nudMinutes = new NumericUpDown();
+            btnAdd = new Button();
+            dataGridViewTasks = new DataGridView();
+            btnSchedule = new Button();
+            btnClear = new Button();
+            btnBenchmark = new Button();
+            listBoxSchedule = new ListBox();
+            lblSchedule = new Label();
+            ((System.ComponentModel.ISupportInitialize)nudMinutes).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewTasks).BeginInit();
+            SuspendLayout();
             // 
             // lblTitle
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Location = new System.Drawing.Point(12, 15);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(100, 15);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Название задачи:";
+            lblTitle.AutoSize = true;
+            lblTitle.Location = new Point(22, 32);
+            lblTitle.Margin = new Padding(6, 0, 6, 0);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(208, 32);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "Название задачи:";
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(15, 33);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(200, 23);
-            this.txtTitle.TabIndex = 1;
+            txtTitle.Location = new Point(28, 70);
+            txtTitle.Margin = new Padding(6, 6, 6, 6);
+            txtTitle.Name = "txtTitle";
+            txtTitle.Size = new Size(368, 39);
+            txtTitle.TabIndex = 1;
             // 
             // lblPriority
             // 
-            this.lblPriority.AutoSize = true;
-            this.lblPriority.Location = new System.Drawing.Point(230, 15);
-            this.lblPriority.Name = "lblPriority";
-            this.lblPriority.Size = new System.Drawing.Size(60, 15);
-            this.lblPriority.TabIndex = 2;
-            this.lblPriority.Text = "Приоритет:";
+            lblPriority.AutoSize = true;
+            lblPriority.Location = new Point(427, 32);
+            lblPriority.Margin = new Padding(6, 0, 6, 0);
+            lblPriority.Name = "lblPriority";
+            lblPriority.Size = new Size(139, 32);
+            lblPriority.TabIndex = 2;
+            lblPriority.Text = "Приоритет:";
             // 
             // cmbPriority
             // 
-            this.cmbPriority.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPriority.Items.AddRange(new object[] { "Low", "Medium", "High", "Critical" });
-            this.cmbPriority.Location = new System.Drawing.Point(233, 33);
-            this.cmbPriority.Name = "cmbPriority";
-            this.cmbPriority.Size = new System.Drawing.Size(100, 23);
-            this.cmbPriority.TabIndex = 3;
-            this.cmbPriority.SelectedIndex = 1;
+            cmbPriority.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbPriority.Items.AddRange(new object[] { "Low", "Medium", "High", "Critical" });
+            cmbPriority.Location = new Point(433, 70);
+            cmbPriority.Margin = new Padding(6, 6, 6, 6);
+            cmbPriority.Name = "cmbPriority";
+            cmbPriority.Size = new Size(182, 40);
+            cmbPriority.TabIndex = 3;
             // 
             // lblMinutes
             // 
-            this.lblMinutes.AutoSize = true;
-            this.lblMinutes.Location = new System.Drawing.Point(345, 15);
-            this.lblMinutes.Name = "lblMinutes";
-            this.lblMinutes.Size = new System.Drawing.Size(75, 15);
-            this.lblMinutes.TabIndex = 4;
-            this.lblMinutes.Text = "Время (мин):";
+            lblMinutes.AutoSize = true;
+            lblMinutes.Location = new Point(641, 32);
+            lblMinutes.Margin = new Padding(6, 0, 6, 0);
+            lblMinutes.Name = "lblMinutes";
+            lblMinutes.Size = new Size(155, 32);
+            lblMinutes.TabIndex = 4;
+            lblMinutes.Text = "Время (мин):";
             // 
             // nudMinutes
             // 
-            this.nudMinutes.Location = new System.Drawing.Point(348, 33);
-            this.nudMinutes.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
-            this.nudMinutes.Name = "nudMinutes";
-            this.nudMinutes.Size = new System.Drawing.Size(80, 23);
-            this.nudMinutes.TabIndex = 5;
-            this.nudMinutes.Value = new decimal(new int[] { 30, 0, 0, 0 });
+            nudMinutes.Location = new Point(646, 70);
+            nudMinutes.Margin = new Padding(6, 6, 6, 6);
+            nudMinutes.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            nudMinutes.Name = "nudMinutes";
+            nudMinutes.Size = new Size(149, 39);
+            nudMinutes.TabIndex = 5;
+            nudMinutes.Value = new decimal(new int[] { 30, 0, 0, 0 });
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(445, 31);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(120, 25);
-            this.btnAdd.TabIndex = 6;
-            this.btnAdd.Text = "Добавить задачу";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            btnAdd.Location = new Point(826, 66);
+            btnAdd.Margin = new Padding(6, 6, 6, 6);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(223, 53);
+            btnAdd.TabIndex = 6;
+            btnAdd.Text = "Добавить задачу";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // dataGridViewTasks
             // 
-            this.dataGridViewTasks.AllowUserToAddRows = false;
-            this.dataGridViewTasks.AllowUserToDeleteRows = false;
-            this.dataGridViewTasks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewTasks.Location = new System.Drawing.Point(15, 70);
-            this.dataGridViewTasks.Name = "dataGridViewTasks";
-            this.dataGridViewTasks.ReadOnly = true;
-            this.dataGridViewTasks.Size = new System.Drawing.Size(550, 200);
-            this.dataGridViewTasks.TabIndex = 7;
+            dataGridViewTasks.AllowUserToAddRows = false;
+            dataGridViewTasks.AllowUserToDeleteRows = false;
+            dataGridViewTasks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewTasks.Location = new Point(28, 149);
+            dataGridViewTasks.Margin = new Padding(6, 6, 6, 6);
+            dataGridViewTasks.Name = "dataGridViewTasks";
+            dataGridViewTasks.ReadOnly = true;
+            dataGridViewTasks.RowHeadersWidth = 82;
+            dataGridViewTasks.Size = new Size(1021, 427);
+            dataGridViewTasks.TabIndex = 7;
             // 
             // btnSchedule
             // 
-            this.btnSchedule.Location = new System.Drawing.Point(15, 285);
-            this.btnSchedule.Name = "btnSchedule";
-            this.btnSchedule.Size = new System.Drawing.Size(150, 30);
-            this.btnSchedule.TabIndex = 8;
-            this.btnSchedule.Text = "Спланировать задачи";
-            this.btnSchedule.UseVisualStyleBackColor = true;
-            this.btnSchedule.Click += new System.EventHandler(this.btnSchedule_Click);
+            btnSchedule.Location = new Point(28, 608);
+            btnSchedule.Margin = new Padding(6, 6, 6, 6);
+            btnSchedule.Name = "btnSchedule";
+            btnSchedule.Size = new Size(279, 64);
+            btnSchedule.TabIndex = 8;
+            btnSchedule.Text = "Спланировать задачи";
+            btnSchedule.UseVisualStyleBackColor = true;
+            btnSchedule.Click += btnSchedule_Click;
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(180, 285);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(100, 30);
-            this.btnClear.TabIndex = 9;
-            this.btnClear.Text = "Очистить";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            btnClear.Location = new Point(334, 608);
+            btnClear.Margin = new Padding(6, 6, 6, 6);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(186, 64);
+            btnClear.TabIndex = 9;
+            btnClear.Text = "Очистить";
+            btnClear.UseVisualStyleBackColor = true;
+            btnClear.Click += btnClear_Click;
             // 
             // btnBenchmark
             // 
-            this.btnBenchmark.Location = new System.Drawing.Point(295, 285);
-            this.btnBenchmark.Name = "btnBenchmark";
-            this.btnBenchmark.Size = new System.Drawing.Size(150, 30);
-            this.btnBenchmark.TabIndex = 10;
-            this.btnBenchmark.Text = "Тест производительности";
-            this.btnBenchmark.UseVisualStyleBackColor = true;
-            this.btnBenchmark.Click += new System.EventHandler(this.btnBenchmark_Click);
+            btnBenchmark.Location = new Point(548, 608);
+            btnBenchmark.Margin = new Padding(6, 6, 6, 6);
+            btnBenchmark.Name = "btnBenchmark";
+            btnBenchmark.Size = new Size(279, 64);
+            btnBenchmark.TabIndex = 10;
+            btnBenchmark.Text = "Тест производительности";
+            btnBenchmark.UseVisualStyleBackColor = true;
+            btnBenchmark.Click += btnBenchmark_Click;
             // 
             // listBoxSchedule
             // 
-            this.listBoxSchedule.FormattingEnabled = true;
-            this.listBoxSchedule.ItemHeight = 15;
-            this.listBoxSchedule.Location = new System.Drawing.Point(15, 330);
-            this.listBoxSchedule.Name = "listBoxSchedule";
-            this.listBoxSchedule.Size = new System.Drawing.Size(550, 154);
-            this.listBoxSchedule.TabIndex = 11;
+            listBoxSchedule.FormattingEnabled = true;
+            listBoxSchedule.Location = new Point(28, 704);
+            listBoxSchedule.Margin = new Padding(6, 6, 6, 6);
+            listBoxSchedule.Name = "listBoxSchedule";
+            listBoxSchedule.Size = new Size(1018, 324);
+            listBoxSchedule.TabIndex = 11;
             // 
             // lblSchedule
             // 
-            this.lblSchedule.AutoSize = true;
-            this.lblSchedule.Location = new System.Drawing.Point(15, 312);
-            this.lblSchedule.Name = "lblSchedule";
-            this.lblSchedule.Size = new System.Drawing.Size(120, 15);
-            this.lblSchedule.TabIndex = 12;
-            this.lblSchedule.Text = "Расписание задач:";
+            lblSchedule.AutoSize = true;
+            lblSchedule.Location = new Point(28, 666);
+            lblSchedule.Margin = new Padding(6, 0, 6, 0);
+            lblSchedule.Name = "lblSchedule";
+            lblSchedule.Size = new Size(216, 32);
+            lblSchedule.TabIndex = 12;
+            lblSchedule.Text = "Расписание задач:";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(580, 500);
-            this.Controls.Add(this.lblSchedule);
-            this.Controls.Add(this.listBoxSchedule);
-            this.Controls.Add(this.btnBenchmark);
-            this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.btnSchedule);
-            this.Controls.Add(this.dataGridViewTasks);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.nudMinutes);
-            this.Controls.Add(this.lblMinutes);
-            this.Controls.Add(this.cmbPriority);
-            this.Controls.Add(this.lblPriority);
-            this.Controls.Add(this.txtTitle);
-            this.Controls.Add(this.lblTitle);
-            this.Name = "Form1";
-            this.Text = "Система управления задачами с приоритетами";
-            ((System.ComponentModel.ISupportInitialize)(this.nudMinutes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTasks)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(2086, 1067);
+            Controls.Add(lblSchedule);
+            Controls.Add(listBoxSchedule);
+            Controls.Add(btnBenchmark);
+            Controls.Add(btnClear);
+            Controls.Add(btnSchedule);
+            Controls.Add(dataGridViewTasks);
+            Controls.Add(btnAdd);
+            Controls.Add(nudMinutes);
+            Controls.Add(lblMinutes);
+            Controls.Add(cmbPriority);
+            Controls.Add(lblPriority);
+            Controls.Add(txtTitle);
+            Controls.Add(lblTitle);
+            Margin = new Padding(6, 6, 6, 6);
+            Name = "Form1";
+            Text = "Система управления задачами с приоритетами";
+            ((System.ComponentModel.ISupportInitialize)nudMinutes).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewTasks).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

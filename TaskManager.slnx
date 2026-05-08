@@ -8,5 +8,6 @@
     <File Path="Priority.cs" />
     <File Path="TaskItem.cs" />
   </Folder>
+  <Project Path="../TaskManager.Tests/TaskManager.Tests.csproj" Id="5669c42f-b970-466a-be3c-362a9d9da59a" />
   <Project Path="TaskManager.csproj" />
 </Solution>
