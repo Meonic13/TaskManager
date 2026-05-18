@@ -87,6 +87,7 @@
             nudMinutes.Location = new Point(646, 70);
             nudMinutes.Margin = new Padding(6, 6, 6, 6);
             nudMinutes.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            nudMinutes.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             nudMinutes.Name = "nudMinutes";
             nudMinutes.Size = new Size(149, 39);
             nudMinutes.TabIndex = 5;
